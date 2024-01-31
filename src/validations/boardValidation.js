@@ -1,12 +1,5 @@
 /*eslint-disable no-console  */
 
-/*Note: mặc định chúng ta không cần phải custom message ở phía BE làm gì
-vì để FE tự validate và custom mesage phía FE cho đẹp
-BE chỉ cần validate đảm bảo dữ liệu chính xác và trả về message mặc định từ thư viện là được
-Quan trọng: việc validate dữ liệu là bắc buộc phải có ở phía BE vì đâu là điểm cuối để lưu trữ dữ liệu và oDB
-và trong thực tế tốt nhất là validate ở cả 2 phía BE và FE
-*/
-
 import Joi from 'joi'
 import { StatusCodes } from 'http-status-codes'
 import ApiError from '~/utils/ApiError'
