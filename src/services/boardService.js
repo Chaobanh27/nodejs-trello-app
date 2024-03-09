@@ -1,6 +1,6 @@
 /*eslint-disable no-console  */
 /*eslint-disable no-useless-catch*/
-import { slugify } from '~/utils/formatters'
+// import { slugify } from '~/utils/formatters'
 import { boardModel } from '~/models/boardModel'
 import { columnModel } from '~/models/columnModel'
 import { cardModel } from '~/models/cardModel'
@@ -13,8 +13,8 @@ const createNew = async (reqBody) => {
   try {
     //xử lý logic dữ liệu tùy đặc thù dự án
     const newBoard = {
-      ...reqBody,
-      slug: slugify(reqBody.title)
+      ...reqBody
+      //slug: slugify(reqBody.title)
     }
 
     //gọi tới tầng model để lưu bản ghi vào database
