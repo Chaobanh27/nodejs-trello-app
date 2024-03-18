@@ -17,7 +17,7 @@ export const errorHandlingMiddleware = (err, req, res, next) => {
   }
   // console.error(responseError)
 
-  // Chỉ khi môi trường là DEV thì mới trả về Stack Trace để debug dễ dàng hơn, còn không thì xóa đi. (Muốn hiểu rõ hơn hãy xem video 55 trong bộ MERN Stack trên kênh Youtube: https://www.youtube.com/@trungquandev)
+  // Chỉ khi môi trường là DEV thì mới trả về Stack Trace để debug dễ dàng hơn, còn không thì xóa đi.
   console.log('env.buildmode:' + env.BUILD_MODE)
 
   if (env.BUILD_MODE !== 'dev') delete responseError.stack
